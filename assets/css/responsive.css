@@ -1,0 +1,155 @@
+:root {
+  --main-color: #a800a8;
+  --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --black-900: #01010f;
+  --black-400: #555555;
+  --black-100: #3a3a3a;
+  --white: #ffffff;
+  --white-100: #f7f7f7;
+}
+@media (max-width: 991px) {
+  .navbar .menu {
+    position: fixed;
+    left: -100%;
+    top: 80px;
+    flex-direction: column;
+    background-color: var(--main-color);
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease;
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+
+  .navbar.sticky .menu {
+    background-color: var(--white);
+    top: 65px;
+  }
+
+  .navbar .menu .navbar-item {
+    display: block;
+    margin: 18px 0;
+  }
+
+  .navbar.sticky .menu .navbar-item .nav-link {
+    color: var(--main-color);
+  }
+
+  .navbar .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+
+  .navbar .container {
+    padding: 0;
+  }
+
+  .home-section .home-text h2 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .home-section .home-text p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .home-section .home-image .img-box {
+    max-width: 380px;
+  }
+
+  .product-items .product-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+
+  .contact-form .left,
+  .contact-form .right {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .contact-info {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+
+  .contact-form {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+
+  .right-col,
+  .left-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .left-col {
+    order: 2;
+  }
+
+  .right-col {
+    order: 1;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .effect-3 {
+    left: 14%;
+    top: 45%;
+  }
+
+  .effect-4 {
+    top: 32%;
+    right: 4%;
+  }
+
+  .contact-section .contact-info,
+  .contact-section .contact-form,
+  .about-section .about-img,
+  .about-section .about-text,
+  .home-section .home-image,
+  .home-section .home-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .home-section .full-screen {
+    padding: 100px 0;
+  }
+
+  .home-section .home-image .img-box {
+    max-width: 350px;
+    margin-top: 60px;
+  }
+
+  .about-section .about-img .img-box {
+    padding-bottom: 30px;
+    max-width: 300px;
+  }
+
+  .product-items .product-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .product-items .product-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .newsletter-form .txtb {
+    max-width: 260px;
+    padding: 16px 20px;
+    object-fit: cover;
+  }
+}
